@@ -1,0 +1,20 @@
+#drawing-board {
+    border: 1.5px solid orangered;
+    outline: none;
+    width: 65vw;
+    height: 420px;
+    background-color: #e8eaed;
+    font-size: 0.8em;    
+}
+#board-container {
+    text-align: center;
+}
+
+#progress-sponge
+{
+    background-color: yellow;
+    border: 1.5px solid black;
+    height: 25px;
+    width: 35px;
+    text-align: center;
+}

@@ -1,0 +1,41 @@
+#timer-container {    
+    display: inline-block;
+    background-color: #e8eaed;
+    margin: 10px;
+    padding: 4px;
+    border: 1.5px solid orangered;
+    width: 20%;
+    height: 48px;
+}
+#image-clock-div {
+    overflow:hidden;
+    width: 35%;
+    height: 100%;
+    float: left;
+}
+#clock-image {
+    width: 78%;
+    height: auto;
+    padding: 0;
+}
+#countdown-digits-container{   
+    width: 65%;
+    height: 100%;
+    float: right;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+label.countdown-timer-digits {
+    margin: 2px;
+    color: black;
+    font-weight: bolder;
+}
+.verticalLine {
+    overflow: hidden;
+    display: inline;
+    margin: 0;
+    padding: 0;
+    height: 100% ;
+    border-left: 1.5px solid #ff0000;
+}
