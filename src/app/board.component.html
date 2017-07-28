@@ -1,0 +1,8 @@
+<timer></timer>
+<div>  
+    <textarea id="drawing-board" [disabled]="disabledDrawingBoard"
+    rows="20" cols="100" (click)="!timerClicked ? boardClick() : null" >{{ startingSentence }}</textarea>
+    <div id="progress-sponge">
+        <label>{{currentProgressStatus}}</label>
+    </div>
+</div>

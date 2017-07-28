@@ -5,24 +5,25 @@
     padding: 4px;
     border: 1.5px solid orangered;
     width: 20%;
-    height: 48px;
+    height: 35px;
+    display: flex;
+    align-items: center;
 }
 #image-clock-div {
     overflow:hidden;
-    width: 35%;
+    width: 20%;
     height: 100%;
     float: left;
 }
 #clock-image {
-    width: 78%;
-    height: auto;
+    width: auto;
+    height: 100%;
     padding: 0;
 }
 #countdown-digits-container{   
-    width: 65%;
     height: 100%;
     float: right;
-    margin: auto;
+    margin: 0;
     display: flex;
     align-items: center;
 }
@@ -30,12 +31,4 @@ label.countdown-timer-digits {
     margin: 2px;
     color: black;
     font-weight: bolder;
-}
-.verticalLine {
-    overflow: hidden;
-    display: inline;
-    margin: 0;
-    padding: 0;
-    height: 100% ;
-    border-left: 1.5px solid #ff0000;
 }
