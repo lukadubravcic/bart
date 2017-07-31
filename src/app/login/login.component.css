@@ -1,0 +1,15 @@
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px auto;
+    display: block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.box{
+  background:white;
+  width:300px;
+  margin: 0 auto 0 auto;
+  padding:0px 0px 25px 0px;
+}

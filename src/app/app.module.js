@@ -10,8 +10,13 @@ var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
 var forms_1 = require("@angular/forms");
 var app_component_1 = require("./app.component");
-var board_component_1 = require("./board.component");
-var timer_component_1 = require("./timer.component");
+var board_component_1 = require("./board/board.component");
+var timer_component_1 = require("./board/timer.component");
+var login_component_1 = require("./login/login.component");
+// fake backend
+var index_1 = require("./helpers/index");
+var testing_1 = require("@angular/http/testing");
+var http_1 = require("@angular/http");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -26,9 +31,15 @@ AppModule = __decorate([
         declarations: [
             app_component_1.AppComponent,
             board_component_1.BoardComponent,
-            timer_component_1.TimerComponent
+            timer_component_1.TimerComponent,
+            login_component_1.LoginComponent
         ],
-        providers: [],
+        providers: [
+            // fake backend
+            index_1.fakeBackendProvider,
+            testing_1.MockBackend,
+            http_1.BaseRequestOptions
+        ],
         bootstrap: [app_component_1.AppComponent]
     })
 ], AppModule);
